@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>John Hankwitz — Data & Business Analyst</title>
+<meta name="description" content="John Hankwitz — data and business analyst in Boston. SQL, Python, Power BI. M.S. Business Analytics candidate at UMass Amherst Isenberg.">
+<meta property="og:title" content="John Hankwitz — Data & Business Analyst">
+<meta property="og:description" content="Data and business analyst in Boston. SQL, Python, Power BI.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%231b3a5c'/><text x='50' y='68' font-size='54' font-family='Georgia,serif' fill='white' text-anchor='middle'>J</text></svg>">
+<style>
+  :root{
+    --bg:#fcfcfa;
+    --surface:#ffffff;
+    --ink:#16181c;
+    --ink-2:#4a5058;
+    --ink-3:#787f88;
+    --rule:#e4e4df;
+    --accent:#1b3a5c;
+    --accent-soft:#eef2f6;
+    --max:46rem;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#111316;
+      --surface:#171a1e;
+      --ink:#f0f1f2;
+      --ink-2:#b2b8c0;
+      --ink-3:#848b94;
+      --rule:#282c32;
+      --accent:#8fb4dc;
+      --accent-soft:#1b2330;
+    }
+  }
+
+  *,*::before,*::after{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+    font-size:17px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 1.5rem}
+
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--accent) 32%,transparent)}
+  a:hover{border-bottom-color:var(--accent)}
+
+  /* ---------- masthead ---------- */
+  header.site{padding:5.5rem 0 3rem}
+  h1{
+    margin:0 0 .4rem;
+    font-size:clamp(2.1rem,6vw,2.9rem);
+    line-height:1.08;
+    letter-spacing:-.025em;
+    font-weight:650;
+  }
+  .role{
+    margin:0 0 1.6rem;
+    font-size:1.05rem;
+    color:var(--ink-2);
+    font-weight:500;
+  }
+  .role .sep{color:var(--ink-3);margin:0 .5rem}
+  .intro{margin:0;font-size:1.07rem;color:var(--ink-2);max-width:34rem}
+  .intro strong{color:var(--ink);font-weight:600}
+
+  .links{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:2rem;padding:0;list-style:none}
+  .links a{
+    display:inline-block;
+    border:1px solid var(--rule);
+    border-radius:999px;
+    padding:.4rem .95rem;
+    font-size:.9rem;
+    color:var(--ink-2);
+    background:var(--surface);
+    transition:border-color .15s,color .15s;
+  }
+  .links a:hover{border-color:var(--accent);color:var(--accent)}
+
+  /* ---------- sections ---------- */
+  section{padding:3rem 0;border-top:1px solid var(--rule)}
+  h2{
+    margin:0 0 2rem;
+    font-size:.76rem;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--ink-3);
+    font-weight:650;
+  }
+  h3{margin:0 0 .3rem;font-size:1.18rem;letter-spacing:-.012em;font-weight:620;line-height:1.3}
+
+  /* ---------- case study ---------- */
+  .case{
+    background:var(--surface);
+    border:1px solid var(--rule);
+    border-radius:10px;
+    padding:1.75rem;
+  }
+  .case .stack{
+    margin:.1rem 0 1.1rem;
+    font-size:.82rem;
+    color:var(--ink-3);
+    letter-spacing:.02em;
+  }
+  .case p{margin:0 0 1.1rem;color:var(--ink-2)}
+  .case p:last-child{margin-bottom:0}
+
+  .figures{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(8.5rem,1fr));
+    gap:1px;
+    background:var(--rule);
+    border:1px solid var(--rule);
+    border-radius:8px;
+    overflow:hidden;
+    margin:0 0 1.3rem;
+  }
+  .fig{background:var(--surface);padding:.95rem 1rem}
+  .fig b{display:block;font-size:1.32rem;letter-spacing:-.02em;color:var(--ink);font-weight:650;line-height:1.2}
+  .fig span{display:block;font-size:.76rem;color:var(--ink-3);margin-top:.15rem}
+
+  .did{margin:0;padding:0;list-style:none}
+  .did li{position:relative;padding-left:1.15rem;margin-bottom:.55rem;color:var(--ink-2)}
+  .did li::before{
+    content:"";position:absolute;left:0;top:.68em;
+    width:5px;height:5px;border-radius:50%;background:var(--accent);opacity:.55;
+  }
+  .did li:last-child{margin-bottom:0}
+
+  /* ---------- compact lists ---------- */
+  .more{margin:1.75rem 0 0;padding:0;list-style:none}
+  .more li{padding:.85rem 0;border-top:1px solid var(--rule)}
+  .more li:first-child{border-top:0;padding-top:0}
+  .more .t{font-weight:600;color:var(--ink)}
+  .more .d{color:var(--ink-2);font-size:.95rem}
+
+  .job{margin-bottom:2.1rem}
+  .job:last-child{margin-bottom:0}
+  .meta{
+    display:flex;flex-wrap:wrap;gap:.45rem;align-items:baseline;
+    font-size:.88rem;color:var(--ink-3);margin-bottom:.7rem;
+  }
+  .meta .dot{opacity:.5}
+  .job ul{margin:0;padding:0;list-style:none}
+  .job li{position:relative;padding-left:1.15rem;margin-bottom:.5rem;color:var(--ink-2)}
+  .job li::before{
+    content:"";position:absolute;left:0;top:.68em;
+    width:5px;height:5px;border-radius:50%;background:var(--ink-3);opacity:.5;
+  }
+
+  .skills{display:grid;gap:1.1rem}
+  .skillrow{display:grid;grid-template-columns:8.5rem 1fr;gap:1rem;align-items:baseline}
+  .skillrow dt{font-size:.82rem;color:var(--ink-3);letter-spacing:.02em}
+  .skillrow dd{margin:0;color:var(--ink-2)}
+  @media (max-width:33rem){
+    .skillrow{grid-template-columns:1fr;gap:.2rem}
+  }
+
+  .edu{margin-bottom:1.4rem}
+  .edu:last-child{margin-bottom:0}
+  .edu .d{font-size:.92rem;color:var(--ink-2)}
+
+  /* ---------- contact ---------- */
+  .contact p{margin:0 0 1.3rem;color:var(--ink-2);max-width:32rem}
+  .mail{
+    display:inline-block;background:var(--accent);color:var(--bg);
+    border:0;border-radius:7px;padding:.65rem 1.3rem;
+    font-size:.97rem;font-weight:560;letter-spacing:.005em;
+  }
+  @media (prefers-color-scheme: dark){ .mail{color:#111316} }
+  .mail:hover{opacity:.88}
+
+  footer{padding:2.5rem 0 4rem;border-top:1px solid var(--rule);color:var(--ink-3);font-size:.84rem}
+
+  @media (max-width:33rem){
+    body{font-size:16px}
+    header.site{padding:3.5rem 0 2.25rem}
+    .case{padding:1.3rem}
+    section{padding:2.5rem 0}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="site">
+    <h1>John Hankwitz</h1>
+    <p class="role">Data &amp; Business Analyst<span class="sep">·</span>Boston, MA</p>
+    <p class="intro">
+      I turn messy operational data into reporting people actually use. Right now I work with
+      donor and constituent data at <strong>Beacon Academy</strong> while finishing an
+      <strong>M.S. in Business Analytics</strong> at UMass Amherst&rsquo;s Isenberg School.
+      I&rsquo;m looking for analyst roles and summer internships in Boston, New York, and DC.
+    </p>
+    <ul class="links">
+      <li><a href="mailto:jbhankwitz2@gmail.com">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/john-bijoy-hankwitz-6824441ab" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://github.com/johnhankwitz" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="resume.pdf">Résumé (PDF)</a></li>
+    </ul>
+  </header>
+
+  <section id="work">
+    <h2>Selected work</h2>
+
+    <article class="case">
+      <h3>Commercial Flight Operations &amp; Revenue Analysis</h3>
+      <p class="stack">PostgreSQL · Python · Power BI</p>
+
+      <div class="figures">
+        <div class="fig"><b>7M+</b><span>flight records</span></div>
+        <div class="fig"><b>2.1M</b><span>flights modeled</span></div>
+        <div class="fig"><b>269M</b><span>passengers</span></div>
+      </div>
+
+      <p>
+        U.S. airlines publish enormous amounts of operational data and almost no revenue data.
+        I built a pipeline over the Bureau of Transportation Statistics record set to answer
+        the operational questions directly, then layered a modeled revenue view on top so
+        profitability and load factor could be examined alongside delays and cancellations.
+      </p>
+
+      <ul class="did">
+        <li>Cleaned, transformed, validated, and indexed 7M+ BTS flight records in Python and PostgreSQL.</li>
+        <li>Built a modeled commercial layer covering roughly 2.1M flights and 269M passengers to estimate revenue, cost, profitability, load factor, and fare-class mix.</li>
+        <li>Wrote SQL reporting views for carrier, route, delay, cancellation, and financial analysis.</li>
+        <li>Delivered the results as a multi-page Power BI dashboard built for someone else to explore.</li>
+      </ul>
+
+      <p style="margin-top:1.1rem;font-size:.92rem;color:var(--ink-3)">
+        The operational figures come from published BTS data. The revenue and cost layer is modeled,
+        not reported — it&rsquo;s there to make the operational numbers interpretable, not to state
+        what any airline actually earned.
+      </p>
+    </article>
+
+    <ul class="more">
+      <li>
+        <span class="t">NFL 4th-Down Decision Model</span> —
+        <span class="d">Multiclass classifier predicting punt, field goal, or go-for-it from game situation and coach identity. 0.88 accuracy, 0.83 macro-F1, deployed as a Streamlit app.</span>
+      </li>
+      <li>
+        <span class="t">MoneyLab</span> —
+        <span class="d">Personal financial planning app in Python and Streamlit. Models income, expenses, savings, and debt, and compares scenarios side by side.</span>
+      </li>
+      <li>
+        <span class="t">Small Market, Big Wins</span> —
+        <span class="d">Analytics report on the Milwaukee Brewers, with a supporting advanced-stats dashboard. Charts in matplotlib, laid out in InDesign.</span>
+      </li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="job">
+      <h3>Development Coordinator</h3>
+      <p class="meta"><span>Beacon Academy</span><span class="dot">·</span><span>Boston, MA</span><span class="dot">·</span><span>Sept 2026 – Present</span></p>
+      <ul>
+        <li>Manage donor, volunteer, and constituent records in Raiser&rsquo;s Edge NXT.</li>
+        <li>Build CRM queries and Excel analyses covering donor retention, fundraising performance, and historical giving trends.</li>
+        <li>Reconcile constituent data across systems and resolve inconsistencies so appeals and outreach go to the right people.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Program Administration Coordinator</h3>
+      <p class="meta"><span>United South End Settlements</span><span class="dot">·</span><span>Boston, MA</span><span class="dot">·</span><span>June 2026 – Sept 2026</span></p>
+      <ul>
+        <li>Managed CACFP compliance by validating attendance, eligibility, and program records against audit requirements.</li>
+        <li>Processed billing in Procare and investigated discrepancies across enrollment, attendance, and financial records.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <dl class="skills">
+      <div class="skillrow"><dt>Languages</dt><dd>SQL, Python, R, Java, JavaScript / TypeScript</dd></div>
+      <div class="skillrow"><dt>Analytics</dt><dd>Power BI, Tableau, Excel (PivotTables, lookups), pandas, NumPy, scikit-learn</dd></div>
+      <div class="skillrow"><dt>Data &amp; tools</dt><dd>PostgreSQL, MySQL, SQLite, Salesforce, Raiser&rsquo;s Edge NXT, Git, Jupyter</dd></div>
+    </dl>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="edu">
+      <h3>M.S. Business Analytics — Data Analytics Track</h3>
+      <p class="d">UMass Amherst, Isenberg School of Management · In progress</p>
+    </div>
+    <div class="edu">
+      <h3>B.S. Informatics — Data Science Concentration</h3>
+      <p class="d">UMass Amherst · Minor in Computer Science · May 2026 · Dean&rsquo;s List, Fall 2025 &amp; Spring 2026</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Get in touch</h2>
+    <p>
+      If you&rsquo;re hiring analysts or interns in Boston, New York, or DC, I&rsquo;d like to hear
+      about it. The fastest way to reach me is email.
+    </p>
+    <a class="mail" href="mailto:jbhankwitz2@gmail.com">jbhankwitz2@gmail.com</a>
+  </section>
+
+  <footer>
+    © <span id="y">2026</span> John Hankwitz
+  </footer>
+
+</div>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
